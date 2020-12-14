@@ -1,0 +1,7 @@
+To create a local git repository:
+S1.Install git to your system.
+S2.To initialise a directory as git use "git init" command
+S3.To add files to this directory use "git add ."
+The above step will add all the files into git
+S4.To add your remote repo as origin use "git remote add origin "your repository""
+S5. To add files from your local repo to remote repo use push command "git push - origin main"
