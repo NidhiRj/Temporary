@@ -1,7 +1,40 @@
+Git Functions:
+
 To create a local git repository:
-S1.Install git to your system.
-S2.To initialise a directory as git use "git init" command
-S3.To add files to this directory use "git add ."
+*Install git to your system.
+*To initialise a directory as git use "git init" command
+*To add files to this directory use "git add ."
 The above step will add all the files into git
-S4.To add your remote repo as origin use "git remote add origin "your repository""
-S5. To add files from your local repo to remote repo use push command "git push - origin main"
+*To add your remote repo as origin use "git remote add origin "your repository""
+*To add files from your local repo to remote repo use push command "git push - origin main"
+*To add the changes done on your github repo to your local repo use command "git fetch" and "git merge"
+
+SSH Key :
+
+*To generate SSH key use the command "$ ssh-keygen -t ed25519 -C "<emailid connected with github>"
+Upon execution of the above step,the terminal will prompt you to add passphrase and filename in which the keys are stored.
+If needed enter an appropriate one,else just hit enter.
+The next step is to add ssh key to agent, for that first launch ssh agent using "$ eval $(ssh-agent -s)".
+To add key to agent,use "$ ssh-add "
+After key generation, to add them to github copy the contents of public key.
+Then login to your hithub account inside which settings will be seen.
+In settings,goto SSH and GPG keys.In that page you can add a ssh key by giving it an appropriate description and pasting the public key.
+To ensure that the ssh key is working perfectly try any git commands.
+
+HTML document creation:
+
+The document contains 4 pages:Welcome, About,Mark,College,Contact.
+Welcome:
+The Welcome page consists of navigation bar created using <table> tag which aligned towards the centre using <center> tag. 
+It also contains some description which is also centered.
+About:
+This page introduces me to the person who reads the content.Also styled and aligned.
+Mark:
+This page displays the marks I have scored in my 10th, 12th, BCA.
+It is done using <table> command.
+Contact:
+It contains basic contact info which is also displayed using <table> tag
+College:
+This page leads the user to TKMCE official website.
+
+
